@@ -1,4 +1,25 @@
+.about__container {
+  padding: 40px 20px;
+  background-color: $background-color;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 20 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 60 16px;
+  }
+}
+
 .about__lable {
+  margin-bottom: 15px;
+
   font-family: 'Titan One';
   font-size: 18px;
   line-height: 1.17;
@@ -9,8 +30,9 @@
 }
 
 .about__title {
-  font-family: 'Titan One';
+  margin-bottom: 32px;
 
+  font-family: 'Titan One';
   font-size: 34px;
   line-height: 1.15;
   text-align: center;
@@ -20,6 +42,8 @@
 }
 
 .about__description {
+  margin-bottom: 20px;
+
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
@@ -27,12 +51,17 @@
   color: $second-txt-color;
 
   &--color {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
     color: $prime-txt-color;
+    margin-bottom: 29px;
   }
 }
 
 .about__btn {
-  @extend .btn;
+  @extend %btn;
   color: $red-txt-color;
   background-color: $white-color;
 }
