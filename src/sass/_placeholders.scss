@@ -1,0 +1,23 @@
+%is-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+%btn {
+  display: inline-block;
+  padding: 11px 22px;
+  font-family: DM Sans, sans-serif;
+  font-style: normal;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
