@@ -1,13 +1,11 @@
-:root {
-  --prime-txt-color: #000000;
-  --second-txt-color: #907e82;
-  --white-color: #ffffff;
-  --pink-txt-color: #ffa5ba; // красній на кнопках
-  --red-txt-color: #d41443; // красній на кнопках
+$prime-txt-color: #000000;
+$second-txt-color: #907e82;
+$white-color: #ffffff;
+$pink-txt-color: #ffa5ba; // красній на кнопках
+$red-txt-color: #d41443; // красній на кнопках
 
-  --green: #c2e297; // на секцию продукти
-  --orenge: #f0d1a5; // на секцию продукти
-  --pink: #d41443; // на секцию продукти
+$green: #c2e297; // на секцию продукти
+$orenge: #f0d1a5; // на секцию продукти
+$pink: #d41443; // на секцию продукти
 
-  --background-color: #fff5f6; // background на footer and about
-}
+$background-color: #fff5f6; // background на footer and about
