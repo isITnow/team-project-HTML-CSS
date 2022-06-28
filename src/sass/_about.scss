@@ -1,0 +1,38 @@
+.about__lable {
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $pink-txt-color;
+}
+
+.about__title {
+  font-family: 'Titan One';
+
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $red-txt-color;
+}
+
+.about__description {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $second-txt-color;
+
+  &--color {
+    color: $prime-txt-color;
+  }
+}
+
+.about__btn {
+  @extend .btn;
+  color: $red-txt-color;
+  background-color: $white-color;
+}
