@@ -1,0 +1,98 @@
+.about__container {
+  position: relative;
+  padding: 40px 20px;
+  background-color: $background-color;
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 20 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 60 16px;
+  }
+}
+
+.about__lable {
+  margin-bottom: 15px;
+
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $pink-txt-color;
+}
+
+.about__title {
+  margin-bottom: 32px;
+
+  font-family: 'Titan One';
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $red-txt-color;
+}
+
+.about__description {
+  margin-bottom: 20px;
+
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $second-txt-color;
+
+  &--color {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: $prime-txt-color;
+    margin-bottom: 29px;
+  }
+}
+
+.about__btn {
+  @extend %btn;
+  font-style: 500;
+  color: $red-txt-color;
+  background-color: $white-color;
+  display: flex;
+  align-items: center;
+}
+
+.about__svg {
+  margin-left: 14px;
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 574px;
+
+  height: 132px;
+  width: 320px;
+
+  background: url('../images/milk-background(png)-desktop-1x.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url('../images/milk-background(png)-desktop-2x.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
