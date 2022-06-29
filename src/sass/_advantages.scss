@@ -1,6 +1,18 @@
 .advantages {
     padding-bottom: 80px;
     background-color: $background-color;
+
+    @media screen and (min-width: 320px) {
+        width: 320px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+    }
 }
 
 .advantages__container {
@@ -16,8 +28,8 @@
         padding: 0 32px;
     }
 
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
         padding: 0 16px;
     }
 }
@@ -44,11 +56,11 @@
         }
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         max-width: 290px;
 
         &+& {
-            margin-left: 100px;
+            margin-left: 130px;
         }
     }
 }
@@ -78,7 +90,7 @@
         margin-bottom: 36px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 40px;
     }
 }
@@ -104,7 +116,7 @@
         margin-bottom: 36px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 40px;
     }
 }
@@ -130,7 +142,7 @@
         margin-bottom: 36px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 40px;
     }
 }
@@ -149,7 +161,7 @@
         font-size: 48px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         font-size: 58px;
     }
 }
@@ -164,7 +176,7 @@
         line-height: 1.74;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         font-size: 16px;
         line-height: 1.76;
     }
