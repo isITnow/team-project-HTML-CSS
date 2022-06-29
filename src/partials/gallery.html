@@ -1,3 +1,31 @@
 <section class="gallery">
   <h2 class="gallery__title">Gallery</h2>
+  <picture>
+    <source
+      srcset="
+        ./images/fragments(jpg)-desktop-1x.jpg 1x,
+        ./images/fragments(jpg)-desktop-2x.jpg 2x
+      "
+      media="(min-width: 1200px)"
+    />
+    <source
+      srcset="
+        ./images/fragments(jpg)-tablet-1x.jpg 1x,
+        ./images/fragments(jpg)-tablet-2x.jpg 2x
+      "
+      media="(min-width: 768px)"
+    />
+    <source
+      srcset="
+        ./images/fragments(jpg)-mobile-1x.jpg 1x,
+        ./images/fragments(jpg)-mobile-2x.jpg 2x
+      "
+      media="(min-width: 320px)"
+    />
+    <img
+      class="gallery__pic"
+      src="./images/fragments(jpg)-mobile-1x.jpg"
+      alt="Gallery"
+    />
+  </picture>
 </section>
