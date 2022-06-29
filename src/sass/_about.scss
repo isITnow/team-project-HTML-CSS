@@ -63,8 +63,15 @@
 
 .about__btn {
   @extend %btn;
+  font-style: 500;
   color: $red-txt-color;
   background-color: $white-color;
+  display: flex;
+  align-items: center;
+}
+
+.about__svg {
+  margin-left: 14px;
 }
 
 .bg {
