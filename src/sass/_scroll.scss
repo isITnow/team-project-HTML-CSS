@@ -1,0 +1,24 @@
+html{
+  scroll-behavior: smooth;
+}
+
+.akeconsa-udaneles{
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 1;
+}
+.akeconsa-udaneles a {
+  height: 42px;
+  width: 42px;
+  text-align: center;
+  background: $pink;
+  display: block;
+  border-radius: 50%;
+}
+.akeconsa-udaneles a span {
+  color: #f7f0f0;
+  font-size: 30px;
+  line-height: 42px;
+  cursor: pointer;
+}
