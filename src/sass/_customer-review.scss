@@ -1,0 +1,145 @@
+.custumer {
+  padding-top: 80px;
+  padding-bottom: 48px;
+  text-align: center;
+
+  // @media screen and (min-width: 768px) {
+  //   max-width: 768px;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 120px;
+  //   padding-bottom: 50px;
+  // }
+}
+
+// .custumer__container {
+//   max-width: 480px;
+//   width: 100%;
+
+//   @media screen and (min-width: 768px) {
+//     max-width: 768px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     max-width: 1280px;
+//   }
+// }
+
+// custumer__title
+.custumer__title {
+  @extend %is-hidden;
+}
+
+// блок image-slider__image
+.image-slider__image {
+  text-align: center;
+
+  & img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
+}
+
+.image-slider__block {
+  background-color: #fafafa;
+  width: 1034px;
+  padding: 31px 106px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// .image-slider__slide {
+//   display: flex;
+// }
+
+.image-slider__txt-block {
+  padding: 43px 58px 26px 65px;
+
+  // @media screen and (min-width: 768px) {
+  //   max-width: 768px;
+  // }
+
+  @media screen and (min-width: 1200px) {
+    padding: 15px 36px 8px 36px;
+  }
+}
+
+.image-slider__txt {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 750px;
+  width: 100%;
+
+  position: relative;
+  z-index: 0;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  background-image: repeating-linear-gradient(
+    180deg,
+    transparent,
+    transparent 19px,
+    #e1e1e1 20px
+  );
+
+  &::before {
+    display: block;
+    width: 55px;
+    height: 40px;
+    content: ' ';
+
+    position: absolute;
+    left: -5%;
+    top: -5%;
+    z-index: -1;
+
+    background-image: url('../images/lapku.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::after {
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: ' ';
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-image: url('../images/red-group\(png\)-2x.png');
+    left: 50%;
+    right: 50%;
+    // position: absolute;
+  }
+}
+
+.image-slider__name {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+
+  text-align: center;
+
+  position: relative;
+}
+
+// пагинация слайдера
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 50px;
+}
