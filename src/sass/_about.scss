@@ -2,13 +2,18 @@
   position: relative;
   padding: 40px 20px;
   background-color: $background-color;
-  width: 320px;
+  // width: 320px;
   margin-right: auto;
   margin-left: auto;
   z-index: 0;
+
+   @media screen and (min-width: 320px) {
+        width: 320px;
+    }
 }
 
 .about__bloc::after {
+  
   position: absolute;
   z-index: -1;
   top: 545px;
@@ -16,7 +21,9 @@
   content: '';
   display: block;
   width: 320px;
+  max-width: 100%;
   height: 133px;
+  
   margin-left: -20px;
   background: url('../images/milk-background(png)-mobile-1x.png');
   background-repeat: no-repeat;
@@ -29,7 +36,7 @@
   (min-resolution: 2dppx) {
     background: url('../images/milk-background(png)-mobile-2x.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
   }
 }
@@ -60,7 +67,7 @@
 
 .about__description {
   &--color {
-    width: 220px;
+    max-width: 220px;
     font-family: 'DM Sans';
     font-weight: 500;
     font-size: 12px;
@@ -70,7 +77,7 @@
   }
 
   &--size {
-    width: 220px;
+    max-width: 220px;
     margin-bottom: 20px;
 
     font-family: 'DM Sans';
