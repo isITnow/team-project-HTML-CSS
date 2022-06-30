@@ -303,6 +303,10 @@
     letter-spacing: 0em;
     padding-top: 12px;
     padding-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 700;
+    }
 }
 
 .contacts__button--red {
@@ -357,7 +361,8 @@
 }
 
 .icon-send-white {
-    color: white;
+    stroke: white;
+    fill: transparent;
     margin-left: 8px;
 
     @media screen and (min-width: 768px) {
@@ -371,6 +376,8 @@
 
 .icon-send-red {
     margin-left: 13px;
+    stroke: #D41443;
+    fill: transparent;
 
     @media screen and (min-width: 1280px) {
         margin-left: 14px;
