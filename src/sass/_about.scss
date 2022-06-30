@@ -5,7 +5,7 @@
   width: 320px;
   margin-right: auto;
   margin-left: auto;
-  z-index: -2;
+  z-index: 0;
 }
 
 .about__bloc::after {
@@ -25,8 +25,8 @@
   // outline: 1px solid green;
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background: url('../images/milk-background(png)-mobile-2x.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,6 +92,11 @@
   background-color: $white-color;
   display: flex;
   align-items: center;
+  cursor: pointer;
+
+  &:hover, &:focus {
+    background-color: antiquewhite;
+  }
 }
 
 .about__svg {
@@ -191,10 +196,6 @@
     display: flex;
     align-items: center;
   }
-
-  // .bg {
-  //   display: none;
-  // }
 }
 
 @media screen and (min-width: 1280px) {
@@ -208,7 +209,7 @@
 
   .about__bloc::after {
     position: absolute;
-    // z-index: 999;
+
     top: 265px;
     left: 20;
     content: '';
@@ -220,11 +221,10 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    // outline: 1px solid green;
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background: url('../images/milk-background\(png\)-desktop-2x.png');
       background-repeat: no-repeat;
       background-size: cover;
@@ -283,4 +283,6 @@
     position: relative;
     top: -91px;
   }
+
+ 
 }
