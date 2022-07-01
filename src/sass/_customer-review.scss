@@ -1,30 +1,41 @@
 .custumer {
   padding-top: 80px;
   padding-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-
   // @media screen and (min-width: 768px) {
   //   max-width: 768px;
   // }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 120px;
     padding-bottom: 50px;
   }
 }
 
-// .custumer__container {
-// max-width: 480px;
-// width: 100%;
+.custumer__container {
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 
-// @media screen and (min-width: 768px) {
-//   max-width: 768px;
-// }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-// @media screen and (min-width: 1200px) {
-//   max-width: 1280px;
-// }
-// }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 123px;
+    padding-right: 123px;
+  }
+}
 
 // custumer__title
 .custumer__title {
@@ -33,47 +44,95 @@
 
 // блок image-slider__image
 .image-slider__image {
+  display: block;
   text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 
   & img {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 16px;
+    }
   }
 }
 
 .image-slider__block {
+  display: block;
   background-color: #fafafa;
-  width: 1034px;
-  padding: 31px 106px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
+  margin: auto;
+  margin-bottom: 36px;
+  position: relative;
+  width: 280px;
+  height: 308px;
+  padding: 43px 58px 26px 65px;
+
+  &::before {
+    display: block;
+    width: 55px;
+    height: 40px;
+    content: ' ';
+    left: 52px;
+    top: 23px;
+
+    position: absolute;
+    // left: 30px;
+    // top: 68px;
+
+    background-image: url('../images/lapku.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-width: 768px) {
+      width: 60px;
+      left: 3px;
+      top: 19px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 109px;
+      top: 26px;
+      width: 55px;
+      height: 40px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    padding: 37px 55px 44px 50px;
+    height: 164px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1034px;
+    padding: 47px 142px 39px 142px;
+    height: 138px;
+  }
 }
 
 // .image-slider__slide {
 //   display: flex;
 // }
 
-.image-slider__txt-block {
-  padding: 43px 58px 26px 65px;
-
-  // @media screen and (min-width: 768px) {
-  //   max-width: 768px;
-  // }
-
-  @media screen and (min-width: 1200px) {
-    padding: 15px 36px 8px 36px;
-  }
-}
-
+//
 .image-slider__txt {
   display: block;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  max-width: 750px;
+  margin: auto;
+  // margin-top: ;
+  // margin-bottom: 15px;
+  // max-width: 160px;
   width: 100%;
+  max-width: 160px;
 
   position: relative;
   z-index: 0;
@@ -81,47 +140,37 @@
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.86;
-
+  font-size: 12px;
+  line-height: 2.55;
   text-align: center;
+
   letter-spacing: 0.04em;
+  // background-image: repeating-linear-gradient(
+  //   to bottom,
+  //   #000 5px,
+  //   // #000 ,
+  //   #е1е1е1 30рх
+  // );
 
   background-image: repeating-linear-gradient(
-    180deg,
+    to bottom,
     transparent,
-    transparent 19px,
-    #e1e1e1 20px
+    transparent 28px,
+    #e1e1e1 30px
   );
 
-  &::before {
-    display: block;
-    width: 55px;
-    height: 40px;
-    content: ' ';
-
-    position: absolute;
-    left: -5%;
-    top: -5%;
-    z-index: -1;
-
-    background-image: url('../images/lapku.png');
-    background-repeat: no-repeat;
-    background-size: contain;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.16;
+    max-width: 750px;
+    width: 100%;
   }
 
-  &::after {
-    display: block;
-    width: 20px;
-    height: 20px;
-    content: ' ';
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    background-image: url('../images/red-group\(png\)-2x.png');
-    left: 50%;
-    right: 50%;
-    // position: absolute;
+  @media screen and (min-width: 1280px) {
+    max-width: 750px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.86;
   }
 }
 
@@ -129,17 +178,84 @@
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.86;
-
+  // margin-left: auto;
+  // margin-right: auto;
   text-align: center;
+  // position: absolute;
+  // left: 50%;
+  // right: 50%;
+  display: block;
 
-  position: relative;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
+    line-height: 1.86;
+  }
+
+  // псевдоелемент
+
+  &::before {
+    display: block;
+    width: 32px;
+    height: 4px;
+    content: ' ';
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-image: url('../images/red-group\(png\)-2x.png');
+    // left: 50%;
+    // right: 50%;
+    // top: 88%;
+    // position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      top: 88%;
+      left: 48%;
+      right: 52%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 48%;
+      right: 52%;
+    }
+  }
 }
 
 // пагинация слайдера
 
-.swiper-pagination {
-  position: absolute;
-  bottom: 50px;
+.pagination {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.pagination__slide {
+  height: 12px;
+  width: 12px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 18px;
+  margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
+}
+
+.pagination__slide-acktive {
+  margin-right: 18px;
+  margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
 }
