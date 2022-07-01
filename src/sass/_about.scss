@@ -7,13 +7,13 @@
   margin-left: auto;
   z-index: 0;
 
-   @media screen and (min-width: 320px) {
-        width: 320px;
-    }
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
 }
 
 .about__bloc::after {
-  
+
   position: absolute;
   z-index: -1;
   top: 545px;
@@ -23,7 +23,7 @@
   width: 320px;
   max-width: 100%;
   height: 133px;
-  
+
   margin-left: -20px;
   background: url('../images/milk-background(png)-mobile-1x.png');
   background-repeat: no-repeat;

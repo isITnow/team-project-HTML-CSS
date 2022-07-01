@@ -88,7 +88,7 @@
 }
 
 .contacts__item {
-    padding: 40px 32px;    
+    padding: 40px 32px;
 
     @media screen and (min-width: 1280px) {
         padding: 40px 40px;
@@ -179,7 +179,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
-    color: $second-txt-color;    
+    color: $second-txt-color;
 
     @media screen and (min-width: 768px) {
         font-size: 14px;
@@ -369,9 +369,3 @@
         margin-left: 14px;
     }
 }
-
-.button__locations {
-    display: flex;}
-
-.button__title {
-display: flex;} 
