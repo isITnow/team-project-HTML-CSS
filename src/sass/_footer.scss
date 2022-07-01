@@ -110,16 +110,9 @@
     fill: $pink-txt-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .footer__link:active & {
+    .footer__link:hover &,
+    .footer__link:focus & {
         fill: $red-txt-color;
-    }
-
-    @media screen and (min-width: 1280px) {
-
-        .footer__link:hover &,
-        .footer__link:focus & {
-            fill: $red-txt-color;
-        }
     }
 }
 
