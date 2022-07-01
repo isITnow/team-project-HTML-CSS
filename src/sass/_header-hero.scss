@@ -382,6 +382,13 @@
         }
     }
 
+    &__slider-img {
+        animation-name: flash;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 100ms;
+    }
+
     &__text-slider {
         font-family: DM Sans;
         font-weight: 400;
@@ -425,6 +432,13 @@
             top: 433px;
             right: 16px;
         }
+    }
+
+    .girl-tablet {
+        animation-name: heartBeat;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 100ms;
     }
 
     .group-tablet1 {
