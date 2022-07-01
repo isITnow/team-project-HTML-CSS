@@ -2,7 +2,7 @@
   <div class="header__wrapper-container container">
     <div class="header__nav">
       <img class="header__logo" src="./images/logo(png)-1x.png" alt="" />
-      <button class="header__open-menu" type="button" data-modal-opens>
+      <button class="header__open-menu" type="button" data-menu-open>
         <svg
           class="header__burger"
           width="20"
@@ -29,7 +29,9 @@
           <a class="header__link" href="#contact">Contact</a>
         </li>
       </ul>
-      <button class="header__nav-button" type="button">Buy now</button>
+      <button class="header__nav-button" type="button" data-modal-opens>
+        Buy now
+      </button>
     </div>
     <div>
       <img
@@ -114,17 +116,19 @@
       />
     </div>
   </div>
-  <div class="mob-menu is-hidden" data-modals>
+  <div class="mob-menu is-hidden" data-menu>
     <div class="mob-menu-container">
       <div class="mob-menu-container__wrapper">
-        <button class="close-menu" type="button" data-modal-closes>
+        <button class="close-menu" type="button" data-menu-close>
           <svg width="14" height="14" aria-label="Закрыть мобильное меню">
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
       </div>
       <div class="mob-menu-container__wrap">
-        <button class="button-menu" type="button">Buy now</button>
+        <button class="button-menu" type="button" data-modal-opens>
+          Buy now
+        </button>
         <ul class="mobile-list">
           <li class="mobile-list__items">
             <a class="mobile-list__link mobile-list__link-current" href="./"
@@ -148,3 +152,44 @@
     </div>
   </div>
 </header>
+
+<div class="mob-modal is-hidden" data-modals>
+  <div class="modal">
+    <button class="modal__close" type="button" data-modal-closes>
+      <svg class="modal-svg" width="20" height="20">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="modal__title">Buy Ice Cream</p>
+    <form class="modal__form">
+      <div class="modal__field">
+        <label for="username" class="modal__field-label">Name</label>
+        <span class="modal__input-wrapp">
+          <input type="text" name="name" class="modal__input" />
+        </span>
+      </div>
+      <div class="modal__field">
+        <label for="telephone" class="modal__field-label">Name</label>
+        <span class="modal__input-wrapp">
+          <input type="tel" name="tel" class="modal__input" />
+        </span>
+      </div>
+      <div class="modal__field">
+        <label for="mail" class="modal__field-label">Email</label>
+        <span class="modal__input-wrapp">
+          <input type="email" name="mail" class="modal__input" />
+        </span>
+      </div>
+      <div class="modal__field">
+        <label for="comment" class="modal__field-label">Comment</label>
+        <textarea
+          name="comment"
+          id="user-text"
+          placeholder="Leave your comment"
+          class="modal__comment"
+        ></textarea>
+      </div>
+      <button type="submit" class="modal-button">Send</button>
+    </form>
+  </div>
+</div>
